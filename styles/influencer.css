@@ -1,0 +1,176 @@
+/* Shared Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-gray {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.right-arrow{
+    padding-left: 10px;
+}
+
+/* Header section styles */
+
+/* nav styles */
+
+header {
+    padding: 0 120px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #3A3A3A;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 1.875rem;
+    font-weight: 500;
+    font-size: 1.125;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* hero styles */
+
+.hero {
+    background-image: url('../images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-left {
+    width: 60%;
+}
+
+.hero-right {
+    width: 40%;
+    text-align: center;
+}
+
+.hero-title {
+    color: #3A3A3A;
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.hero-btn {
+    cursor: pointer;
+    padding: 10px 25px;
+    border-radius: 41px;
+    border: none;
+    background-color: #E02C6D;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Partner section styles */
+
+.Partner{
+    padding: 40px 0;
+    width: 1110px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+/* Responsive Media quais */
+
+/* Mobile devices */
+
+@media screen and (max-width: 576px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+    
+    .hero{
+        gap: 20px;
+        padding: 0;
+        margin-top: 40px;
+        background-position: top;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+
+    .Partner{
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+
+}
+
+
+/* Tablet devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+    header {
+        padding: 0 40px;
+    }
+
+    .hero{
+        gap: 20px;
+        padding: 0;
+        margin-top: 40px;
+        background-position: top;
+        flex-direction: column-reverse;
+    }
+
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+    
+    .Partner{
+        margin-top: 40px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+}
